@@ -17,7 +17,7 @@ The python console can be accessed by just typing `python`. You can execute some
 
 It is recommended to create a different environment for each project, so that the installed packages' dependencies are kept separated.
 
-Please go though these steps to create our workhops' environment:
+Please go though these steps to create our workshops' environment:
 
 1. Create an environment (named `pythonsql`): 
 
