@@ -4,7 +4,7 @@ We will use mock data of an imaginary movie streamer service to illustrate SQL b
 
 # Data
 
-Mock data under the `../data/` folder, generated with `../scripts/generate_mock_data.py`
+The mock data we will work with is found under the `../data/` folder. `mock_users.json` was generated with [mockaroo](https://www.mockaroo.com/), and `mock_rentals.csv` with `../scripts/generate_mock_data.py`.
 
 # Code
 

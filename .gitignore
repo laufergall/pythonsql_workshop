@@ -7,3 +7,6 @@
 
 # large data files
 /data/csv/listings.csv
+
+# result files
+**movies_high_scores.csv
