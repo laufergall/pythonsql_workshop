@@ -70,7 +70,7 @@ SELECT COUNT(*) FROM users WHERE last_name LIKE 'Ba%';
 
 SELECT COUNT(*) FROM users GROUP BY gender;
 
-SELECT first_name, last_name FROM users WHERE (gender = 'Male' and email LIKE '%.edu');
+SELECT first_name, last_name FROM users WHERE (gender = 'Male' AND email LIKE '%.edu');
 
 SELECT DISTINCT year FROM rentals;
 
