@@ -103,7 +103,7 @@ plt.show()
 #
 # Exercise:
 # How much is the average price for a private room in the Moabit area?
-# Tip: look for the string 'Moabit' in the neighbourhood names using '.str.find'
+# Hint: look for the string 'Moabit' in the neighbourhood names using '.str.find'
 #
 
 #%%

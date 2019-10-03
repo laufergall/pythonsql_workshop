@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS users (
 We can verify that our table has been created by running in our terminal:
 
 ```bash
-sqlite3 ../data/sqlite/test.db
+sqlite3 ../data/sqlite/movie_rentals.db
 .tables
 .exit
 ```
@@ -74,7 +74,7 @@ SELECT first_name, last_name FROM users WHERE (gender = 'Male' AND email LIKE '%
 
 SELECT DISTINCT year FROM rentals;
 
-SELECT COUNT(DISTINCT year) FROM rentals;
+SELECT COUNT(DISTINCT title) FROM rentals;
 
 SELECT DISTINCT title FROM rentals WHERE year > 2009;
 
@@ -85,9 +85,18 @@ JOIN (SELECT user_id, title, rental_timestamp
 	WHERE rental_timestamp > '2019-09-11' ORDER BY rental_timestamp ASC) r
 ON u.id = r.user_id;
 
-SELECT sum(cost) from rentals GROUP BY ;
+SELECT user_id, avg(cost) from rentals GROUP BY user_id;
+
+SELECT first_name, last_name, avg(cost)
+FROM users u
+JOIN (SELECT user_id, cost 
+    FROM rentals) r
+ON u.id = r.user_id
+GROUP BY u.id;
 
 SELECT strftime('%Y', rental_timestamp) from rentals;
+
+SELECT COUNT(DISTINCT strftime('%Y', rental_timestamp)) from rentals;
 
 ```
 
@@ -104,14 +113,16 @@ SELECT * FROM users WHERE last_name LIKE 'Ba%';
 	
 # Exercises
 
-1. Read `mock_rentals.csv` and insert records into rentals. *Tip: use the `pd.read_csv()` and the `insert_rental()` methods*
+1. Read `mock_rentals.csv` and insert records into rentals. *Hint: use the `pd.read_csv()` and the `insert_rental()` methods*
 
 2. Query: which 3 movies provided the largest profit overall and how much was this profit (return only 3 rows).
 
-3. Query: how many times was each movie rented.
+3. Query: how many times was each movie rented each month. *Hint: you would need to `strftime()` to extract the month*
 
-4. Query: how many unique movies were rented between 1st August 2015 and 15th February 2016.
+4. how many unique users rented a movie between 1st August 2018 and 15th February 2019.
 
-5. (Bonus!) Query: considering 2016 only, how many movies did each user rent and how much did each user spend.
+5. Query: Did male or female users rent Titanic more often in 2016?
 
-6. (Super Bonus!) Without using sqlite, repeat the exercises before to find out the same information from the data, based on pandas dataframes. Do you find it easier with sqlite or with pandas?
+6. (Bonus!) Query: considering 2016 only, how many movies did each user rent and how much did each user spend.
+
+7. (Super Bonus!) Without using sqlite, repeat the exercises before to find out the same information from the data, based on pandas dataframes. Do you find it easier with sqlite or with pandas?

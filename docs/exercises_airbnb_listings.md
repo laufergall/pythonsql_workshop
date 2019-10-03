@@ -26,6 +26,6 @@ The main script we will use is `../scripts/airbnb_listings.py`.
 3. What is the maximum price each host asks for a property?
 
 4. How much is the average price for a private room in the Moabit area?
-*Tip: look for the string `Moabit` in the neighbourhood names using `.str.find`.*
+*Hint: look for the string `Moabit` in the neighbourhood names using `.str.find`.*
 
 5. Plot the number of properties with prices under 20 € per neighbourhood.

@@ -79,36 +79,44 @@ print(df)
 #%%
 
 #
-# Exercise: read 'mock_rentals.csv' and insert records into rentals
-# Tip: use the pd.read_csv() and the insert_rental() methods
+# Exercise: read 'mock_rentals.csv' and insert records into rentals-
+# Hint: use the pd.read_csv() and the insert_rental() methods.
 #
 
 #%%
 
 #
 # Exercise:
-# Query: which 3 movies provided the largest profit overall and how much was this profit (return only 3 rows)
+# Query: which 3 movies provided the largest profit overall and how much was this profit (return only 3 rows).
 #
 
 #%%
 
 #
 # Exercise:
-# Query: how many times was each movie rented
+# Query: how many times was each movie rented each month.
+# Hint: you would need to `strftime()` to extract the month
 #
 
 #%%
 
 #
 # Exercise:
-# Query: how many unique movies were rented between 01 August 2015 and 15 February 2016
+# Query: how many unique users rented a movie between 1st August 2018 and 15th February 2019.
+#
+
+#%%
+
+#
+# Exercise:
+# Query: Did male or female users rent Titanic more often in 2017?
 #
 
 #%%
 
 #
 # (Bonus) Exercise:
-# Query: Considering 2016 only, how many movies did each user rent and how much did each user spend
+# Query: Considering 2016 only, how many movies did each user rent and how much did each user spend.
 #
 
 #%%
