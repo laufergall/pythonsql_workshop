@@ -113,3 +113,5 @@ SELECT * FROM users WHERE last_name LIKE 'Ba%';
 4. Query: how many unique movies were rented between 1st August 2015 and 15th February 2016.
 
 5. (Bonus!) Query: considering 2016 only, how many movies did each user rent and how much did each user spend.
+
+6. (Super Bonus!) Without using sqlite, repeat the exercises before to find out the same information from the data, based on pandas dataframes. Do you find it easier with sqlite or with pandas?

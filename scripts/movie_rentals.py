@@ -69,8 +69,12 @@ with conn:
                             user['email'],
                             user['gender'])) for user in mock_users]
     """
-    query_result = execute(conn, statement_03)
-    print(query_result)
+
+query_result = execute(conn, statement_03)
+
+# col names still not set
+df = pd.DataFrame(query_result)
+print(df)
 
 #%%
 
@@ -109,5 +113,14 @@ with conn:
 
 #%%
 
-# We need to close the connection in the end
+#
+# (Super Bonus) Exercise:
+# Without using sqlite, repeat the exercises before to find out the same information from the data,
+# based on pandas dataframes.
+# Do you find it easier with sqlite or with pandas?
+#
+
+#%%
+
+# We make sure we close the connection when we finish
 conn.close()
