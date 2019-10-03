@@ -1,5 +1,5 @@
 """
-This file uses geopandas to examine the coordinates of airbnb properties in Berlin
+This file uses geopandas to examine the geospatial data of airbnb properties in Berlin
 """
 
 import os

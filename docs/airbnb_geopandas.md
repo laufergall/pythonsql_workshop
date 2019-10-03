@@ -30,4 +30,4 @@ Finally, I also installed matplotlib: `conda install matplotlib` and descartes f
 
 # Airbnb property locations
 
-With this [script](../scripts/airbnb_geopandas.py) I was able to generate the figure ![](../figures/airbnb_geopandas_5_200.png), which marks the airbnb house/apartments locations in Berlin. The darker points correspond to more expensive properties, up to 200 €/night.
+With this very simple [script](../scripts/airbnb_geopandas.py) I was able to generate the figure: ![](../figures/airbnb_geopandas_5_200.png) Airbnb house/apartments locations in Berlin are marked over a base map. The darker points correspond to more expensive properties, up to 200 €/night.
