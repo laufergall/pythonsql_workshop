@@ -10,3 +10,7 @@
 
 # result files
 **movies_high_scores.csv
+
+# shp data
+/data/shp/*
+!/data/shp/
