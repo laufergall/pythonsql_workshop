@@ -8,17 +8,12 @@ Technical requirements
 * Python 3.7.4 (not tested with lower Python versions)
 * [requirements.txt](requirements.txt)
 
-Please follow this [guide](docs/get_started.md) to get python, anaconda, and an IDE set up.
+Please follow this [guide](docs/get_started.md) to get python, anaconda environments, and an IDE set up.
 
-## We will go through:
+## You will learn:
 
-* Setting up your python project
-* Jupyter notebooks
-* Intro to databases and to RDBMSes
-* SQL with SQLite
-* Using Pandas
+1. How to use [jupyter notebooks](notebooks/README.md). In [basics_pandas.ipynb](notebooks/basics_pandas.ipynb) we have an example of how to read, manipulate, and save a dataset. You can extend this notebook our create your own to e.g. expore data under `/data`.
 
-## I got inspired by: :
+2. Using pandas to explore data. Examples and exercises are provided in [exercises_airbnb_listings.md](docs/exercises_airbnb_listings.md) based on the code in [airbnb_listings.py](/scripts/airbnb_listings.py).
 
-* [sqlite-python](https://www.sqlitetutorial.net/sqlite-python)
-* 
+3. SQL language, by playing with our mock movie rental service data. The doc [exercises_movie_rentals.md](docs/exercises_movie_rentals.md) together with the script [movie_rentals.py](/scripts/movie_rentals.py) walk you through an example of creating and querying a sqlite database. Some [introductory notes](notes_databases.md) about databases and RDBMSes can also be consulted.

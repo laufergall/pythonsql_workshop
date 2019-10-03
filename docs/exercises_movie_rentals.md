@@ -110,6 +110,12 @@ sqlite3 ../data/sqlite/movie_rentals.db
 SELECT * FROM users WHERE last_name LIKE 'Ba%';
 .exit
 ```
+
+# More about sqlite
+
+* [Documentation](https://sqlite.org/docs.html)
+* [SQLite in python](https://www.sqlitetutorial.net/sqlite-python)
+
 	
 # Exercises
 

@@ -2,6 +2,7 @@
 
 Steps to get python, anaconda, and an IDE set up for our workshop.
 
+
 ## Install Python (via Anaconda)
 
 We want to take advantage of anaconda so that we can easily create environments and and install python packages: 
@@ -47,13 +48,11 @@ quit()
 ```
 
 
-3. We now install all the project's requirements in one go, by:
+3. We now install all the project's requirements in one go. If you have already cloned this repository, `cd` to the root folder and then:
 
 ```bash
 pip install -r requirements.txt
 ```
-
-Where the file `requirements.txt` can be found in the root folder of this repo.
 
 Now, it should be possible to import pandas:
 
